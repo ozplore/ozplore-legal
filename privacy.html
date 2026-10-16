@@ -22,6 +22,10 @@
   .note { background:#fbf4e3; border:1px solid var(--border); border-left:4px solid var(--yellow);
     padding:12px 14px; border-radius:8px; font-size:14px; color:var(--muted); margin:18px 0; }
   .updated { color:var(--muted); font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:14px; }
+  th, td { border:1px solid var(--border); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#eaded0; }
+  mark { background:#ffe58a; padding:0 3px; border-radius:3px; }
   footer { margin-top:50px; padding-top:18px; border-top:1px solid var(--border);
     font-size:13px; color:var(--muted); }
   hr { border:none; border-top:1px solid var(--border); margin:26px 0; }
@@ -33,55 +37,106 @@
   <div class="brand">Ozplore</div>
   <h1>Privacy Policy</h1>
 </header>
-<p><strong>Last updated: 26 Sep 2026</strong></p>
+<p><strong>Last updated: 11 Oct 2026</strong></p>
 <div class="note">This document should be reviewed by a qualified lawyer before public release.</div>
 
 <h2>Who we are</h2>
-<p>Ozplore ("we", "us", "our") is a digital stamp-passport app for Australian road trips. This policy explains what personal information we collect, why, and your rights. Questions: <strong>ozplore@gmail.com</strong>.</p>
+<p>Ozplore ("we", "us", "our") is a digital stamp-passport app for Australian road trips. It is operated by Swapnil Naik, a sole trader (ABN 59 976 517 612). This policy explains what personal information we collect, why, and your rights. Questions: <strong>ozplore@gmail.com</strong>.</p>
+
 <h2>Information we collect</h2>
 <p><strong>Account information.</strong> When you sign in, we collect your <strong>email address</strong> (used to send you a one-time sign-in code) and a <strong>display name</strong> you choose. Your display name is shown publicly — for example on the leaderboard and, if you choose, as credit next to places you suggest.</p>
-<p><strong>Location information.</strong> With your permission, we access your device's location to:
-- confirm you're at a stop when you check in ("stamp — I'm here now");
-- show how far stops are from you and power the "near me" feature.</p>
-<p>We only access location <strong>while the app is open</strong> (foreground). We do <strong>not</strong> track your location in the background. When you check in at a stop using GPS, we store the coordinates of that check-in to verify the stamp.</p>
-<p><strong>Activity information.</strong> We record which stops you collect, whether you checked in by GPS or claimed a place you'd previously visited, the time of collection, and the points earned. This is your passport and progress.</p>
+<p><strong>Location information.</strong> With your permission, we access your device's location to:</p>
+<ul>
+<li>show how far a stop is from you while you are viewing it, and power the "near me" feature; and</li>
+<li>confirm you're at a stop when you check in ("Stamp — I'm here now").</li>
+</ul>
+<p>We only access location <strong>while the app is open</strong> (foreground). We do <strong>not</strong> track your location in the background. Distances are worked out on your device. Your device's coordinates are sent to our servers <strong>only when you check in on the spot</strong>, so we can confirm you are within range of the stop. We use them for that check and <strong>do not store them</strong>. Claiming a place you've visited before does not send your location.</p>
+<p><strong>Activity information.</strong> We record which stops you collect, whether you checked in on the spot (GPS) or claimed a place you'd previously visited, the date and time of collection, and the points earned. This is your passport and progress.</p>
+<p><strong>Check-in photos.</strong> If you choose to add a photo to a stamp, using your camera or photo library (only when you tap to add one), we store it in a private area of our storage provider, linked to your account and that stop. It is retrieved only through your signed-in account in the app. Photos are not currently end-to-end encrypted, so a person with administrative access to our storage could technically open them. We do not view them. You can replace or remove a photo at any time. If you share a stamp card, the card is created on your device and shared through the app you choose.</p>
 <p><strong>Content you provide.</strong> If you suggest a place, we collect what you enter (name, town, category, a map link, coordinates, and any note) and your preference about whether to be credited publicly. We also record places you star or save.</p>
 <p><strong>Device preferences.</strong> Some settings (like light/dark theme) are stored only on your device, not on our servers.</p>
-<p><strong>Usage information.</strong> To understand how the app is used and to improve it, we collect basic usage events - for example, which screens are viewed, whether a search returns results, and when a stamp is collected. These events are tied to a random identifier generated on your device, not to your account, email, or any other personal information. We cannot use this data to identify you.</p>
+<p><strong>Usage information.</strong> To understand how the app is used and to improve it, we collect basic usage events — for example, which screens and stops are viewed, what you type into search and whether it returns results, when you tap "Directions", and when a stamp is collected. These events are tied to a random identifier generated on your device, not to your account or email. We do not link this data to your account and we do not use it to identify you. Please don't type personal information into search boxes. We keep usage events for 12 months.</p>
+
 <h2>What we do NOT collect</h2>
 <ul>
 <li>We do <strong>not</strong> collect payment information (Ozplore is free).</li>
-<li>We do <strong>not</strong> track your location in the background.</li>
-<li>We do <strong>not</strong> access your contacts, photos, microphone, or camera.</li>
+<li>We do <strong>not</strong> track your location in the background, and we do not keep a history of where you have been.</li>
+<li>We do <strong>not</strong> access your contacts or microphone. We access your camera or photo library only when you choose to add a check-in photo.</li>
 <li>We do <strong>not</strong> use third-party advertising or ad-tracking.</li>
 <li>We do <strong>not</strong> sell your personal information.</li>
 </ul>
+
 <h2>Why we collect it (purpose)</h2>
 <p>To provide the core service: letting you collect stamps, verify visits, track progress and rank, appear on leaderboards, contribute suggestions, and receive credit if you choose, and to understand how the app is used so we can improve it. We rely on your <strong>consent</strong> (which you can withdraw) and our <strong>legitimate interest</strong> in operating the app.</p>
+
 <h2>Who we share it with (service providers)</h2>
-<p>We use trusted third parties to run Ozplore. They process data on our behalf:
-- <strong>Supabase</strong> — stores your account, activity and content data, and provides authentication.
-- <strong>Resend</strong> — sends your one-time sign-in code emails.
-- <strong>Google Maps</strong> — when you tap "Directions", we open Google Maps with the stop's coordinates. Your use of Google Maps is subject to Google's privacy policy.
-- <strong>Expo</strong> — the framework we use to build and deliver the app.
-- <strong>Apple App Store / Google Play</strong> — distribute the app.</p>
+<p>We use trusted third parties to run Ozplore. They process data on our behalf:</p>
+<ul>
+<li><strong>Supabase</strong> — stores your account, activity, photo and usage data, and provides authentication. Hosted in Sydney, Australia.</li>
+<li><strong>Resend</strong> — sends your one-time sign-in code emails.</li>
+<li><strong>Apple Maps / Google Maps</strong> — when you tap "Directions", we open Apple Maps (on iPhone) or Google Maps (on Android) with the stop's coordinates. Your use of those apps is subject to Apple's or Google's privacy policy.</li>
+<li><strong>Expo</strong> — the framework we use to build and deliver the app.</li>
+<li><strong>Apple App Store / Google Play</strong> — distribute the app and may collect their own information under their own privacy policies.</li>
+</ul>
 <p>We do not otherwise share your personal information, except where required by law.</p>
+
 <h2>Public information</h2>
-<p>Your <strong>display name</strong> is visible to other users (leaderboard, and as suggestion credit if you opt in). If you suggest a place and choose to be credited, your display name may appear publicly next to that place. You can choose <strong>not</strong> to be credited when you submit a suggestion. Please don't use a display name that reveals information you'd rather keep private.</p>
+<p>Your <strong>display name and points</strong> are visible to other users on the leaderboard. If you suggest a place and choose to be credited, your display name may appear publicly next to that place. You can choose <strong>not</strong> to be credited when you submit a suggestion. Please don't use a display name that reveals information you'd rather keep private.</p>
+
 <h2>Data retention</h2>
-<p>We keep your information while your account is active. If you ask us to delete your account, we'll remove your personal data within a reasonable period, except anything we must keep for legal reasons. Approved community suggestions may remain in the app as places, but can be disassociated from your identity on request.</p>
+<p>We keep your information while your account is active. If you ask us to delete your account, we'll remove your personal data, including your check-ins and photos, within 30 days of your request (copies held by our service providers or in backups can take up to 90 days to be fully purged). To request deletion, see our <a href="delete-account.html">account deletion page</a>. We may also keep what we must for legal reasons; except anything we must keep for legal reasons. Approved community suggestions may remain in the app as places, but can be disassociated from your identity on request.</p>
+
 <h2>Your rights</h2>
-<p>Depending on where you live, you may have rights to access, correct, delete, or export your personal information, and to withdraw consent. To exercise these, contact <strong>ozplore@gmail.com</strong>. Australian users are protected under the Privacy Act 1988; you can also contact the Office of the Australian Information Commissioner (OAIC).</p>
+<p>Depending on where you live, you may have rights to access, correct, delete, or export your personal information, to object to or restrict certain processing, and to withdraw consent. To exercise these, contact <strong>ozplore@gmail.com</strong>. We will respond within one month, and may need to confirm your identity first. Australian users are protected under the Privacy Act 1988; you can also contact the Office of the Australian Information Commissioner (OAIC).</p>
+
 <h2>Location permission</h2>
-<p>You control location access through your device settings, and can turn it off at any time. Without location, you can still browse stops and claim places you've visited, but GPS check-in and "near me" won't work.</p>
+<p>You control location access through your device settings, and can turn it off or withdraw consent at any time. Without location, you can still browse stops and claim places you've visited, but on-the-spot check-in and "near me" won't work.</p>
+
 <h2>Children</h2>
-<p>Ozplore is designed for a general audience and often used on family road trips. We do not knowingly collect personal information from children under the age required by law in your region (for example, under 13 in some jurisdictions) without appropriate consent. If you believe a child has provided us personal information, contact us and we'll delete it.</p>
+<p>Ozplore is for people aged 18 and over. We do not knowingly collect personal information from anyone under 18. If you believe a child has provided us personal information, contact us and we'll delete it.</p>
+
 <h2>Security</h2>
 <p>We use industry-standard measures (including encrypted connections and access controls via Supabase) to protect your information. No method is perfectly secure, but we work to keep your data safe.</p>
-<h2>International users</h2>
-<p>Your data may be processed on servers located outside Australia (for example, by our service providers). We take steps to ensure it remains protected.</p>
+
+<h2 id="international-users">Users outside Australia</h2>
+<p>Ozplore is operated from Australia and is designed for people exploring Australian locations, including international visitors. If you use Ozplore from outside Australia, your information is handled in Australia and in the other countries listed below. This section applies in addition to the rest of this Privacy Policy. If it conflicts with another part of this Policy, this section prevails for users outside Australia.</p>
+
+<h3>Who is responsible for your information</h3>
+<p>The operator of Ozplore is Swapnil Naik, a sole trader (ABN 59 976 517 612), contact: <a href="mailto:ozplore@gmail.com">ozplore@gmail.com</a>. We are the "controller" of your personal information for the purposes of laws such as the EU and UK GDPR.</p>
+
+<h3>Our legal bases (EU and UK users)</h3>
+<table>
+  <thead><tr><th>Information</th><th>Why we use it</th><th>Legal basis</th></tr></thead>
+  <tbody>
+    <tr><td>Email address and display name</td><td>To create and secure your account and send sign-in codes</td><td>Performing our contract with you</td></tr>
+    <tr><td>Check-ins (stop, date and time, how you collected it)</td><td>To award stamps and points and show your passport</td><td>Performing our contract with you</td></tr>
+    <tr><td>Device location (sent only at on-the-spot check-in, not stored)</td><td>To confirm you are within range of the stop</td><td>Your consent, which you can withdraw in your device settings</td></tr>
+    <tr><td>Display name and points on the leaderboard</td><td>To run the leaderboard</td><td>Performing our contract with you</td></tr>
+    <tr><td>Check-in photos you add</td><td>To show your photos back to you in your passport</td><td>Performing our contract with you</td></tr>
+    <tr><td>Usage events with a random device ID</td><td>To understand which features and stops are used and to improve the app</td><td>Our legitimate interest in improving the service</td></tr>
+  </tbody>
+</table>
+
+<h3>Where your information is stored and transferred</h3>
+<p>Your information is stored by the service providers listed above and may be transferred to and stored in Australia and the United States (for example, our email provider Resend, and Apple and Google). Where we transfer information of users in the UK or European Economic Area to a country without an adequacy decision, we rely on appropriate safeguards such as the standard contractual clauses (and the UK addendum) in our providers' data processing agreements.</p>
+
+<h3>Complaints</h3>
+<p>If you are not satisfied with our response to a privacy request, you can complain to us, or to your local regulator: in Australia the Office of the Australian Information Commissioner (oaic.gov.au); in the UK the Information Commissioner's Office (ico.org.uk); in the EU, your national data protection authority; in New Zealand the Office of the Privacy Commissioner (privacy.org.nz). Other regulators apply elsewhere.</p>
+
+<h3>Users in specific regions</h3>
+<!-- DECISION before opening the app to EU/UK users: check whether you need to appoint an EU/UK representative (GDPR Art. 27) -->
+<ul>
+  <li><strong>European Economic Area and United Kingdom:</strong> the legal bases and rights above apply.</li>
+  <li><strong>New Zealand:</strong> we handle your information in line with the New Zealand Privacy Act 2020, including its rules on sending information overseas.</li>
+  <li><strong>United States, including California:</strong> we do not sell or share personal information for advertising. You may ask us to access or delete your information using the contact above.</li>
+</ul>
+
+<h3>Safety while travelling</h3>
+<p>Please read our <a href="safety.html">Safety Notice</a>; take particular care at remote locations, which can lack mobile coverage and services.</p>
+
 <h2>Changes to this policy</h2>
-<p>We may update this policy. We'll change the "last updated" date and, for significant changes, notify you in the app.</p>
+<p>We may update this policy. We'll change the "last updated" date and, for significant changes, notify you in the app or by email.</p>
+
 <h2>Contact</h2>
 <p><strong>ozplore@gmail.com</strong></p>
 <footer>
